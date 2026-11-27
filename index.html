@@ -180,6 +180,9 @@
   @media (max-width: 860px) {
     .menu__head { margin-bottom: var(--v-6); }
     .menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--v-3); grid-auto-flow: dense; }
+    /* ровная сетка: все карточки разделов одинаковые, по две в ряд, без пустых ячеек */
+    .menu-card--wide { grid-column: span 1; }
+    .menu-card--wide img { aspect-ratio: 4 / 3; }
     .menu-card__body { padding: var(--v-3) var(--v-3) var(--v-4); }
     .menu-card__body h3 { font-size: .95rem; }
     .menu-card--cta { grid-column: span 2; }
