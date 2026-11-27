@@ -194,12 +194,6 @@
     .menu-card--cta .v-btn { font-size: .875rem; min-height: 40px; }
   }
 
-  /* ---- блок «Под праздник»: ровная симметричная галерея 2×3 --------------- */
-  .feast__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--v-3); }
-  .feast__item { margin: 0; display: grid; gap: var(--v-2); align-content: start; }
-  .feast__item img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--v-radius); box-shadow: var(--v-e1); }
-  .feast__item figcaption { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
-
   /* ---- акт 3 · о ресторане: терраса, сад, два этажа ------------------------ */
   .poka__head { display: grid; gap: var(--v-3); margin-bottom: var(--v-7); max-width: 56rem; }
   .poka__head .v-display--lg { font-size: clamp(1.9rem, 1.2rem + 2.3vw, 3.3rem); }
@@ -445,43 +439,6 @@
       </div>
     </section>
 
-    <!-- 3б · ПОД ПРАЗДНИК: праздничный стол и блюда (между террасой и залами) -->
-    <section class="v-section" data-v-act="flow" data-v-drift="var(--d2)" id="prazdnik" aria-label="Под праздник">
-      <div class="v-wrap">
-        <div class="poka__head" data-v-in data-v-stagger="70">
-          <span class="v-label lbl-gold" data-i18n="holiday.label">Под праздник</span>
-          <h2 class="v-display v-display--lg" data-i18n="holiday.h2">Стол под ваш повод</h2>
-          <p class="v-lede" data-i18n="holiday.lead">Собираете компанию? Накроем стол под ваш праздник – от семейного ужина до банкета.</p>
-        </div>
-        <div class="feast__grid" data-v-in data-v-stagger="70">
-          <figure class="feast__item">
-            <img src="assets/feast-1.webp" srcset="assets/feast-1-480.webp 480w, assets/feast-1-900.webp 900w, assets/feast-1.webp 1536w" sizes="(max-width: 860px) 50vw, 30rem" alt="" width="1536" height="1024" loading="lazy" decoding="async">
-            <figcaption data-i18n="holiday.1.cap">Спринт-планирование.</figcaption>
-          </figure>
-          <figure class="feast__item">
-            <img src="assets/feast-2.webp" srcset="assets/feast-2-480.webp 480w, assets/feast-2-900.webp 900w, assets/feast-2.webp 1536w" sizes="(max-width: 860px) 50vw, 30rem" alt="" width="1536" height="1024" loading="lazy" decoding="async">
-            <figcaption data-i18n="holiday.2.cap">Дизайнер за работой.</figcaption>
-          </figure>
-          <figure class="feast__item">
-            <img src="assets/feast-3.webp" srcset="assets/feast-3-480.webp 480w, assets/feast-3-900.webp 900w, assets/feast-3.webp 1536w" sizes="(max-width: 860px) 50vw, 30rem" alt="" width="1536" height="1024" loading="lazy" decoding="async">
-            <figcaption data-i18n="holiday.3.cap">Парное программирование.</figcaption>
-          </figure>
-          <figure class="feast__item">
-            <img src="assets/feast-4.webp" srcset="assets/feast-4-480.webp 480w, assets/feast-4-900.webp 900w, assets/feast-4.webp 1536w" sizes="(max-width: 860px) 50vw, 30rem" alt="" width="1536" height="1024" loading="lazy" decoding="async">
-            <figcaption data-i18n="holiday.4.cap">Эникей в серверной.</figcaption>
-          </figure>
-          <figure class="feast__item">
-            <img src="assets/feast-5.webp" srcset="assets/feast-5-480.webp 480w, assets/feast-5-900.webp 900w, assets/feast-5.webp 1536w" sizes="(max-width: 860px) 50vw, 30rem" alt="" width="1536" height="1024" loading="lazy" decoding="async">
-            <figcaption data-i18n="holiday.5.cap">Запуск сайта.</figcaption>
-          </figure>
-          <figure class="feast__item">
-            <img src="assets/feast-6.webp" srcset="assets/feast-6-480.webp 480w, assets/feast-6-900.webp 900w, assets/feast-6.webp 2048w" sizes="(max-width: 860px) 50vw, 30rem" alt="" width="2048" height="1152" loading="lazy" decoding="async">
-            <figcaption data-i18n="holiday.6.cap">Команда целиком.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
     <!-- 4 · БАНКЕТЫ: фото зала – фон всего блока; листать скроллом, тапом и свайпом (названия и вместимость – слоты) -->
     <section id="bankety" data-v-act="pin" data-v-span="2.4" data-v-drift="var(--d2)" aria-label="Банкеты">
       <div data-v-stage>
@@ -703,14 +660,6 @@
       'about.turn.label': 'Поэтому',
       'about.turn': 'Место под любой повод: тихий ужин в саду, обед на террасе или банкет на втором этаже.',
       'about.more': 'Узнать подробнее',
-      'holiday.label': 'Под праздник', 'holiday.h2': 'Стол под ваш повод',
-      'holiday.lead': 'Собираете компанию? Накроем стол под ваш праздник – от семейного ужина до банкета.',
-      'holiday.1.cap': 'Спринт-планирование.',
-      'holiday.2.cap': 'Дизайнер за работой.',
-      'holiday.3.cap': 'Парное программирование.',
-      'holiday.4.cap': 'Эникей в серверной.',
-      'holiday.5.cap': 'Запуск сайта.',
-      'holiday.6.cap': 'Команда целиком.',
       'banquet.label': 'Банкеты', 'banquet.h2': 'Залы под ваш праздник',
       'banquet.hint': 'Листайте, тапните или свайпните – залы сменятся',
       'b.capacity': 'Вместимость', 'b.format': 'Формат',
@@ -758,14 +707,6 @@
       'about.turn.label': 'Shuning uchun',
       'about.turn': 'Har qanday vaziyatga mos joy: bog‘da tinch kechki ovqat, terrasada tushlik yoki ikkinchi qavatda banket.',
       'about.more': 'Batafsil',
-      'holiday.label': 'Bayramga', 'holiday.h2': 'Sababingizga dasturxon',
-      'holiday.lead': 'Jamoa to‘playapsizmi? Bayramingizga dasturxon yozamiz – oilaviy kechki ovqaddan banketgacha.',
-      'holiday.1.cap': 'Sprint rejalashtirish.',
-      'holiday.2.cap': 'Dizayner ishda.',
-      'holiday.3.cap': 'Juftlikda dasturlash.',
-      'holiday.4.cap': 'Server xonasida enikey.',
-      'holiday.5.cap': 'Saytning ishga tushirilishi.',
-      'holiday.6.cap': 'Butun jamoa.',
       'banquet.label': 'Banketlar', 'banquet.h2': 'Bayramingiz uchun zallar',
       'banquet.hint': 'Varaqlang, bosing yoki suring – zallar almashinadi',
       'b.capacity': 'Sig‘imi', 'b.format': 'Format',
