@@ -197,8 +197,8 @@
   /* ---- акт 3 · о ресторане: терраса, сад, два этажа ------------------------ */
   .poka__head { display: grid; gap: var(--v-3); margin-bottom: var(--v-7); max-width: 56rem; }
   .poka__head .v-display--lg { font-size: clamp(1.9rem, 1.2rem + 2.3vw, 3.3rem); }
-  .poka__grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: var(--v-8) var(--v-9); align-items: start; }
-  .poka__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); aspect-ratio: 4 / 3; background: var(--v-surface); }
+  .poka__grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: var(--v-8) var(--v-9); align-items: stretch; }
+  .poka__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2); height: 100%; background: var(--v-surface); }
   .poka__fig img { width: 100%; height: 100%; object-fit: cover; }
   .poka__fig figcaption { position: absolute; left: var(--v-4); right: var(--v-4); bottom: var(--v-4); z-index: 1; font-size: var(--v-t-sm); color: var(--v-ink); max-width: 40ch;
     padding: .6em .9em; border-radius: calc(var(--v-radius) - 4px); background: var(--v-canvas-85); box-shadow: 0 0 0 1px var(--v-hair); }
@@ -214,6 +214,7 @@
   @media (max-width: 860px) {
     .poka__head { margin-bottom: var(--v-6); }
     .poka__grid { grid-template-columns: 1fr; gap: var(--v-6); }
+    .poka__fig { height: auto; aspect-ratio: 4 / 3; }
     .turn { padding: var(--v-5); }
     .rows h3 { font-size: var(--v-t-base); }
   }
